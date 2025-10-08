@@ -8,217 +8,159 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
       color: #333;
+      background-color: #fdfcfb;
     }
 
-    .profile {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
+    header, footer { text-align: center; }
 
-    .profile img {
+    h1 { color: #800000; margin-bottom: 0.2rem; font-size: 2.2rem; }
+    h2 { color: #800000; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; margin-top: 2.5rem; }
+
+    .subtitle { color: #666; margin: 0.5rem 0 1rem; }
+
+    img.profile {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      margin-bottom: 1rem;
       object-fit: cover;
+      margin-bottom: 1rem;
     }
 
-    h1 {
-      margin: 0;
-      color: #8B0000;
-      font-size: 2rem;
-    }
-
-    .title {
-      color: #666;
-      margin: 0.5rem 0;
-    }
-
-    .email {
-      color: #666;
-      font-family: monospace;
-      margin: 0.5rem 0;
-    }
-
-    .social-links {
-      margin: 1rem 0;
-    }
-
-    .social-links a {
-      margin: 0 0.5rem;
-      color: #8B0000;
+    .social a {
+      color: #800000;
       text-decoration: none;
+      margin: 0 0.5rem;
     }
 
-    .social-links a:hover {
-      text-decoration: underline;
-    }
+    .social a:hover { text-decoration: underline; }
 
-    section {
-      margin: 2rem 0;
-    }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.4rem; }
 
-    h2 {
-      color: #8B0000;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-
-    .interests {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .interest-item {
-      background: #f5f5f5;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-    }
-
-    .academia-item, .project-item, .teaching-item {
-      margin-bottom: 1rem;
-    }
-
-    .year, .project-location {
-      color: #8B0000;
-      font-size: 0.9rem;
-    }
-
-    .address {
-      color: #666;
-      margin: 0.5rem 0;
-    }
+    section { margin-top: 2rem; }
 
     footer {
       margin-top: 3rem;
-      text-align: center;
       color: #888;
       font-size: 0.9rem;
     }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-    }
+    .year { color: #800000; font-size: 0.9rem; }
   </style>
 </head>
+
 <body>
 
-  <div class="profile">
-    <img src="assets/images/profile.jpg" alt="Akanksha Jain">
+  <header>
+    <img src="assets/images/profile.jpg" alt="Akanksha Jain" class="profile">
     <h1>Akanksha Jain</h1>
-    <p class="title">Assistant Professor, Department of Molecular Life Sciences<br>University of Zurich</p>
-    <p class="address">Winterthurerstrasse 190, 8057 Zurich, Switzerland</p>
-    <p class="email">akanksha.jain@uzh.ch</p>
-    <div class="social-links">
-      <a href="https://github.com/akankshajain2022">GitHub</a>
-      <a href="https://twitter.com/Jain_Akanksha_">Twitter</a>
-      <a href="https://www.linkedin.com/in/akanksha-jain-64346261">LinkedIn</a>
+    <p class="subtitle">Assistant Professor, Neural Morphogenomics Lab<br>
+      Department of Molecular Life Sciences, University of Zurich</p>
+    <p><a href="mailto:akanksha.jain@mls.uzh.ch">akanksha.jain@mls.uzh.ch</a></p>
+    <div class="social">
+      <a href="https://github.com/akankshajain2022">GitHub</a> |
+      <a href="https://twitter.com/Jain_Akanksha_">Twitter</a> |
+      <a href="https://www.linkedin.com/in/akanksha-jain-64346261">LinkedIn</a> |
       <a href="https://orcid.org/0000-0003-4704-7992">ORCiD</a>
     </div>
-  </div>
+  </header>
 
   <section>
-    <h2>Interests</h2>
-    <div class="interests">
-      <span class="interest-item">Brain Organoids</span>
-      <span class="interest-item">Morphodynamics</span>
-      <span class="interest-item">Developmental Biology</span>
-      <span class="interest-item">Mechanics</span>
-      <span class="interest-item">Spatial Transcriptomics</span>
-      <span class="interest-item">Single-cell Genomics</span>
-    </div>
+    <h2>Research Interests</h2>
+    <p>
+      I am interested in understanding the developmental dynamics that shape the human brain, and how these processes go awry in disease.
+      My research combines stem-cell derived brain organoids, long-term lightsheet imaging, spatial transcriptomics, and single-cell genomics
+      to uncover how morphogenetic patterns emerge from molecular and mechanical programs.
+    </p>
   </section>
 
   <section>
-    <h2>Academia</h2>
-    <div class="academia-item">
-      <strong>University of Zurich</strong> – Assistant Professor, Neural Morphogenomics Lab
-      <div class="year">2025 – present</div>
-    </div>
-    <div class="academia-item">
-      <strong>ETH Zürich</strong> – Postdoctoral Researcher, D-BSSE
-      <div class="year">2019 – 2024</div>
-    </div>
-    <div class="academia-item">
-      <strong>Max Planck Institute of Molecular Cell Biology and Genetics</strong> – Ph.D. Molecular Cell Biology
-      <div class="year">2013 – 2019</div>
-    </div>
-    <div class="academia-item">
-      <strong>Tata Institute of Fundamental Research</strong> – M.Sc. Biology
-      <div class="year">2010 – 2013</div>
-    </div>
-    <div class="academia-item">
-      <strong>Hindu College, University of Delhi</strong> – B.Sc. (Hons) Botany
-      <div class="year">2007 – 2010</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Long-term lightsheet imaging coupled with single-cell transcriptomics</h3>
-      <p class="project-location">ETH Zurich (2019 – 2024)</p>
-      <p>Revealing developmental dynamics and lineage trajectories in human organoid development.</p>
-    </div>
-
-    <div class="project-item">
-      <h3>Epithelial Morphogenesis during Tribolium Embryogenesis</h3>
-      <p class="project-location">MPI-CBG, Dresden (2013 – 2019)</p>
-      <p>Investigating molecular, cellular, and mechanical basis of epithelial development.</p>
-    </div>
-
-    <div class="project-item">
-      <h3>Olfactory Receptor Localization</h3>
-      <p class="project-location">TIFR, Mumbai (2010 – 2013)</p>
-      <p>Studied kinesin-2 dependent localization of odorant receptors to olfactory cilia in Drosophila.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Publications</h2>
+    <h2>Employment</h2>
     <ul>
-      <li><a href="https://www.biorxiv.org/content/10.1101/2024.02.08.579413v1">Jain et al., 2024. bioRxiv</a></li>
-      <li><a href="https://www.nature.com/articles/s41586-022-05279-8">Trivedi et al., Nature 2022</a></li>
+      <li><strong>Assistant Professor (Neural Morphogenomics Lab)</strong>, Department of Molecular Life Sciences, University of Zurich (2025–present)</li>
+      <li><strong>Oberassistant</strong>, Department of Molecular Life Sciences, University of Zurich (Sep–Dec 2025)</li>
+      <li><strong>Oberassistant</strong>, Department of Biosystems Science and Engineering, ETH Zurich (Mar–Aug 2025)</li>
+      <li><strong>Postdoctoral Researcher</strong>, ETH Zurich, Department of Biosystems Science and Engineering (2019–2025)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Ph.D., Molecular Cell Biology</strong>, Max Planck Institute of Molecular Cell Biology and Genetics, Dresden (2013–2019)</li>
+      <li><strong>M.Sc., Biology</strong>, Tata Institute of Fundamental Research, Mumbai (2010–2013)</li>
+      <li><strong>B.Sc. (Hons), Botany</strong>, Hindu College, University of Delhi (2007–2010)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Publications</h2>
+    <ul>
+      <li><strong>Jain A*</strong>, Gut G* et al. <em>Morphodynamics of human early brain organoid development.</em> <strong>Nature</strong> (2025). *Equal contribution.</li>
+      <li>Sanchis-Calleja F.*, Azbukina N.*, <strong>Jain A</strong>, et al. <em>Systematic screening of morphogen patterning in human neural organoids with multiplexed single-cell transcriptomics.</em> <strong>Nature Methods</strong> (in press, 2025).</li>
+      <li><strong>Jain A</strong>. <em>Marangoni flows underlie symmetry breaking in early mouse gastruloids.</em> <strong>Nature Physics</strong> (2025).</li>
+      <li>Kasuba K.*, Flaschner G.*, <strong>Jain A*</strong>, Krieg M.*, et al. <em>Five challenges towards exploring the mechanobiology of complex cellular systems.</em> <strong>Nature Nanotechnology</strong> (under revision, 2025).</li>
+      <li>Ahn S., <strong>Jain A</strong>, et al. <em>Fibronectin-templated multi-component fibrillar extracellular matrices to modulate tissue-specific cell dynamics.</em> <strong>Biomaterials</strong> (2024).</li>
+      <li>Fleck J*, Jansen S*, <strong>Jain A</strong>, et al. <em>Inferring and perturbing cell fate regulomes in human brain organoids.</em> <strong>Nature</strong> (2022).</li>
+      <li><strong>Jain A</strong>, Ulman V, Mukherjee A, et al. <em>Regionalized tissue fluidization by an actomyosin cable is required for epithelial gap closure during insect gastrulation.</em> <strong>Nature Communications</strong> (2020).</li>
+      <li><strong>Jain A*</strong>, Dutta P*, Jana S*, et al. <em>Kinesin-2 transports Orco into the olfactory cilium of Drosophila melanogaster.</em> <strong>PLoS Genetics</strong> (2021).</li>
     </ul>
   </section>
 
   <section>
     <h2>Teaching</h2>
-    <div class="teaching-item">
-      <strong>EMBO Lightsheet Microscopy Course</strong> – Speaker and TA, Brno, Czech Republic (2022)
-    </div>
-    <div class="teaching-item">
-      <strong>Single-cell Technologies Master’s Course</strong> – TA, ETH Zurich (2020 – 2024)
-    </div>
-    <div class="teaching-item">
-      <strong>EMBO Lightsheet Microscopy Course</strong> – TA, MPI-CBG, Dresden (2018)
-    </div>
+    <ul>
+      <li><strong>EMBO Lightsheet Microscopy Course</strong> — Lecturer, Dresden (Aug 2025)</li>
+      <li><strong>EMBO Lightsheet Microscopy Course</strong> — Lecturer & TA, Brno (2022)</li>
+      <li><strong>Single-cell Technologies Master’s Course</strong>, ETH Zurich — Teaching Assistant (2020–2024)</li>
+      <li><strong>EMBO Lightsheet Microscopy Course</strong>, MPI-CBG Dresden — Teaching Assistant (2018)</li>
+    </ul>
   </section>
 
   <section>
     <h2>Honors & Awards</h2>
     <ul>
-      <li>[Add your awards here in bullet form]</li>
+      <li>Travel Grant — Latsis Symposium on Smart Microscopy, EPFL (2024)</li>
+      <li>Nikon International Small World in Motion — Honorable Mention (2023)</li>
+      <li>NCCR Representative, Locarno Film Festival (2021)</li>
+      <li>Best Poster Award — EMBL-IBEC Winter Conference, Barcelona (2020)</li>
+      <li>Travel Grant — EMBO Bridging Cell and Tissue Mechanics, Santiago (2019)</li>
+      <li>DIGS-BB PhD Fellowship, Dresden International Graduate School (2015–2017)</li>
+      <li>Junior Research Fellowship, Department of Atomic Energy and TIFR (2010–2013)</li>
+      <li>Best Poster & Best Talk — M2T2 Conference, India (2013)</li>
     </ul>
   </section>
 
   <section>
-    <h2>Invited Seminars</h2>
+    <h2>Invited Talks</h2>
     <ul>
-      <li>[Add invited seminars from your CV]</li>
+      <li>France-BioImaging Advanced Training on Light-Sheet Microscopy, Bordeaux (Nov 2024)</li>
+      <li>Microphysiological Systems: from Organoids to Organs-on-Chip, Cargèse (Sept 2024)</li>
+      <li>MBL Lightsheet Microscopy Conference, Woods Hole (May 2024)</li>
+      <li>Beyond Imaging: Visualization, Analysis and Inference, Monash University (Apr 2023)</li>
+      <li>EMBO Lightsheet Course, CEITEC Brno (Aug 2022)</li>
+      <li>Mechanics of Epithelia Symposium, Cambridge University (Mar 2021)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technical Expertise</h2>
+    <ul>
+      <li>Stem-cell and human brain organoid culture</li>
+      <li>Lightsheet microscopy (SPIM), confocal, spinning disk, and two-photon imaging</li>
+      <li>Single-cell & spatial transcriptomics (Visium, MERFISH, 10x Genomics)</li>
+      <li>Multiplexed immunohistochemistry and 4i imaging</li>
+      <li>CRISPR/Cas genome editing</li>
+      <li>Computational analysis (R, Python, MATLAB, Bash)</li>
     </ul>
   </section>
 
   <footer>
-    &copy; 2025 Akanksha Jain — Neural Morphogenomics Lab
+    &copy; 2025 Akanksha Jain — University of Zurich
   </footer>
 
 </body>
